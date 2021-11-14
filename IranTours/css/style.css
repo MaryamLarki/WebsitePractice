@@ -41,7 +41,9 @@ body{
     position: relative;
 
     clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%) ;
-    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 70% 100%, 30% 100%, 0% 90%); */
+    /* clip-path: polygon(0 10%, 30% 0,70% 0,100% 10%, 100% 90%, 70% 100%, 30% 100%, 0% 90%); */
+    /* clip-path: polygon(0 10%, 30% 0,70% 0,100% 10%, 100% 100%, 0% 100%); */
+    /* clip-path: circle(75% at 50% 100%); */
 }
 
 .logo-box{

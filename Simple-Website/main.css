@@ -1,0 +1,211 @@
+body, ul, li, h1, h2, a{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.starter p span{
+    font: bold;
+    font-size: 1.4em;
+}
+
+nav li a:hover{
+    position: relative;
+    top: -1px;
+    left: 1px;
+    color: #ada023;
+}
+
+.main_nav{
+    position: sticky;
+    top: 0px;
+    background-color: #f4f4f4;
+    /* #bbf1fd
+    #f4f4f4 */
+    padding: 12px;
+}
+
+.main_nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.main_nav li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.imgs li:hover{
+    width: 48%;
+}
+
+.Partner div form input:focus{
+    background:#bebebe;
+    border: 2px solid #bebebe;
+    padding: 10px 22px;
+}
+
+.Partner div form input:valid{
+    border: 2px solid #71d300;
+}
+
+*::selection{
+    background: #bebebe;
+}
+
+a::selection{
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+
+    header{
+    position: relative;
+    }
+
+    header img{
+    max-width: 100%;
+    }
+
+    header h1{
+    position: absolute;
+    background-color:#f4e033;
+    font-size: 36px;
+    left: 30%;
+    top: 23%;
+    padding: 15px;
+    }
+
+    nav li{
+        width: 25%;
+        display: inline-block;
+    }
+
+
+
+    main{
+        max-width: 100%;
+        width: 1200px;
+        margin: 80px auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .starter h3{
+        font-size: 1.5em;
+    }
+
+    p{
+        line-height: 1.5em;
+    }
+
+    .imgs{
+        text-align: center;
+        margin: 80px 0;
+        white-space: nowrap;
+    }
+
+    .imgs li{
+        display: inline-block;
+        width: 46%;
+        margin: 20px 2%;
+    }
+
+    .imgs li img{
+        max-width: 100%;
+        
+    }
+    
+    .Partner{
+        position: relative;
+        text-align: center;
+        background: #000000f8;
+    }
+
+    .Partner img{
+        max-width: 100%;
+    }
+
+    .Partner div{
+        position: absolute;
+        line-height: 1.2em;
+        top: 0%;
+        left: 22%;
+    }
+
+
+    .Partner div form input{
+        margin: 20px 0;
+        padding: 8px 20px;
+        border-radius: 28px;
+        border: 2px solid white;
+    }
+    
+    .Partner div h3{
+        font-size: 26px;
+    }
+
+    .Partner div p{
+        font-size: 0.9em;
+    }
+   
+    /* footer design */
+
+    footer{
+        background-color:#000000;
+        padding: 5px;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: right;
+    }
+
+    footer ul{
+        flex: 1 1 0;
+    }
+
+    .social a.linkedin{
+        background: url(img/linkedin.png) no-repeat center;
+        background-size: 23px;
+    }
+
+    .social a.instagram{
+        background: url(img/600px-Instagram_icon.png) no-repeat center;
+        background-size: 23px;
+    }
+
+    .social a.telegram{
+        background: url(img/Telegram-Logo-700x394.png) no-repeat center;
+        background-size: 40px;
+    }
+
+    .social{
+        display: flex;
+        max-width: 110px;
+        padding: 0;
+        justify-content: ;
+    }
+
+    .social li{
+        flex: 0 1 80px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .social a:hover{
+        background-color: #555;
+        border-radius: 10px;
+    }
+
+    .social a{
+        text-indent: -10000px;
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
