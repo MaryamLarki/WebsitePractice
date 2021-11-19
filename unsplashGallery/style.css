@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1300px;
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+.navBar{
+    
+}
+.logo{
+    max-width: 10rem;
+
+}
+
+#gallery img{
+    max-width: 250px;
+
+}
