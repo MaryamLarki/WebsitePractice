@@ -4,7 +4,7 @@
 }
 
 body{
-    max-width: 1300px;
+    max-width: 1230px;
     width: 100%;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,11 +17,50 @@ body{
     justify-content: space-between;
     width: 100%;
     padding: 15px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    background: #fff;
+    //border-bottom: 1px solid rgba(151, 151, 151, 0.699);
+
 }
 
 .navBar{
-    
+    display: flex;
+    align-items: center;
 }
+
+.navBar a{
+    text-decoration: none;
+    color: #000;
+    border-left: 1px solid grey;
+    padding: 0 10px;
+}
+
+.navBar a:hover{
+    font-size: 1.02rem;
+    color: rgb(63, 63, 63);
+}
+
+button{
+    border: none;
+    background: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 10px;
+}
+
+button:hover{
+    font-size: 1.02rem;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+
 .logo{
     max-width: 10rem;
 
