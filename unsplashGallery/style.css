@@ -4,7 +4,7 @@
 }
 
 body{
-    max-width: 1230px;
+    max-width: 1300px;
     width: 100%;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -15,12 +15,12 @@ body{
 .content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(480px, auto);
+    /* grid-auto-rows: minmax(480px, auto); */
     grid-template-areas:
-    "about about about about"
-    "story story join join"
-    "gallery gallery gallery gallery"
-    "footer footer footer footer"
+    "about about"
+    "story join"
+    "gallery gallery"
+    "footer footer"
     ;
 }
 
@@ -119,7 +119,9 @@ footer img{
 #join{
     grid-area: join;
     width: 92%;
+    height: 480px;
     margin: 20px auto;
+    justify-self: center;
 }
 
 #join h3{
@@ -146,7 +148,9 @@ footer img{
 #story{
     grid-area: story;
     width: 92%;
+    height: 480px;
     margin: 20px auto;
+    align-items: center;
 }
 
 #gallery{
@@ -159,11 +163,11 @@ footer img{
     justify-content: center;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
 }
 #gallery img{
-    max-width: 380px;
+    max-width: 300px;
     border-radius: 20px;
 }
 
@@ -171,10 +175,41 @@ footer img{
     transform: scale(1.01);
 }
 
-#gallery ul .one{
+#gallery ul .four{
+    max-width: 700px;
     grid-column: 1/3;
 }
 
 footer{
     grid-area: footer;
+    max-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    background: #d1bdb4;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.links a:hover{
+    transform: scale(1.02);
+    color: #ca9c86;
+}
+
+/* .social {
+} */
+
+.social img{
+    width: 30px;
+    padding: 0 2px;
+}
+
+.social img:hover{
+    transform: rotateZ(20deg);
 }
